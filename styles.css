@@ -314,17 +314,38 @@ body {
 
 /* Ajustes para pantallas muy pequeñas, como móviles */
 @media (max-width: 480px) {
-    .navbar .logo {
-        max-height: 30px; /* Ajusta la altura máxima del logo para móviles */
+    .menu-toggle {
+        display: block; /* Mostrar el botón en pantallas pequeñas */
+    }
+    
+    .nav-menu {
+        display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
+        position: absolute;
+        top: 60px; /* Ajusta la distancia desde la parte superior del contenedor */
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-menu.active {
+        display: block; /* Mostrar el menú cuando está activo */
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+    }
+    
+    .nav-menu ul li {
+        margin: 10px 0;
+    }
+    
+    .menu-icon {
+        font-size: 24px;
     }
     .navbar .logo img {
         max-height: 50px; /* Ajusta este valor según la altura deseada del navbar */
         width: auto; /* Mantiene la proporción de la imagen */
-    }
-    
-    .hero {
-        height: 50vh;
-        font-size: 0.8em;
     }
 
     .carousel-item {
