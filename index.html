@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetraDetayling</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="/index.html" class="logo">
+                    <img src="./imagenes/metra2 (2).png" alt="Logo">
+                </a>
+                <button class="menu-toggle" aria-label="Open Menu">
+                    <span class="menu-icon">&#9776;</span>
+                </button>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#portfolio">Clientes</a></li>
+                        <li><a href="#footer">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenidos a nuestra web.</h1>
+            <p>La mejor experiencia en carwash.</p>
+            <a href="#footer" class="btn">Contactanos</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Limpieza de interior</h3>
+                <p>Limpiamos por completo el interior de tu auto.</p>
+            </div>
+            <div class="service-card">
+                <h3>Lavado Detallado / Convencional</h3>
+                <p>Contamos con 2 tipos de lavados segun la necesidad de tu auto.</p>
+            </div>
+            <div class="service-card">
+                <h3>Correccion de Barniz</h3>
+                <p>Correjimos todo tipo de detalles en el barniz de tu auto.</p>
+            </div>   
+            <div class="service-card">
+                <h3>Pulidos y Tratamientos</h3>
+                <p>Correjimos todo tipo de detalles en el barniz de tu auto.</p>
+            </div>
+            <div class="service-card">
+                <h3>Pulidos y sellado de opticas</h3>
+                <p>Correjimos todo tipo de detalles en el barniz de tu auto.</p>
+            </div>
+            <div class="service-card">
+                <h3>Limpieza y acondicionamiento de motor</h3>
+                <p>Correjimos todo tipo de detalles en el barniz de tu auto.</p>
+            </div>
+            <div class="service-card">
+                <h3>Pintura de llantas</h3>
+                <p>Correjimos todo tipo de detalles en el barniz de tu auto.</p>
+            </div>            
+
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Nuestros Clientes</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagenes/IMG-20240826-WA0010.jpg" alt="Proyecto 1">
+                   
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/IMG-20240826-WA0021.jpg" alt="Proyecto 2"> 
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/IMG-20240826-WA0026.jpg" alt="Proyecto 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/IMG-20240826-WA0023.jpg" alt="Proyecto 4"> 
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/IMG-20240826-WA0014.jpg" alt="Proyecto 5"> 
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <footer id= "footer" class="footer">
+        <h2>Nuestros Contactos</h2>
+        <div class="footer-buttons">
+            <a href="https://www.instagram.com/metradetailg?igsh=dGE2Mno0aHVpNmVn" target="_blank" class="social-btn">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/+5493514593570" target="_blank" class="social-btn">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>&copy;Hernandez Carlos. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,343 @@
+/* Variables de color */
+:root {
+    --primary-color: #090909;
+    --secondary-color: #bb2121;
+    --text-color: #f0f0f0;
+    --accent-color: #dbdbdb;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    height: 80px; /* Fija la altura del navbar */
+}
+
+/* Estilo para la sección del logo */
+.navbar .logo img {
+    height: 135px; /* Ajusta el tamaño del logo según sea necesario */
+    width:auto; /* Mantiene la proporción del logo */
+}
+.navbar .logo {
+    margin-right: 20px; /* Espaciado entre el logo y los enlaces de navegación */
+}
+
+.menu-toggle {
+    display: none; /* Ocultar el botón en pantallas grandes */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos generales del menú de navegación */
+.nav-menu {
+    display: flex;
+    gap: 20px; /* Espaciado entre elementos */
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul li {
+    margin: 0;
+}
+
+.nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-links li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Estilo del Hero */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    color: white; /* Asegura que el texto sea visible sobre la imagen */
+    overflow: hidden; /* Asegura que el pseudo-elemento no desborde */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), var(--primary-color)), 
+                url("imagenes/IMG-20240826-WA0010.jpg") no-repeat center center/cover;
+    background-size: cover;
+    opacity: 50; /* Ajusta la opacidad del fondo aquí */
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
+
+/* Servicios */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+/* Portfolio */
+.portfolio {
+    padding: 60px 20px;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.social-btn {
+    background-color:var(--secondary-color);
+    color:var(--text-color);
+    font-size: 48px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #b7b7b7;
+    color:var(--secondary-color);
+}
+
+.social-btn i {
+    line-height: 50px;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (min-width: 481px) and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostrar el botón en pantallas pequeñas */
+    }
+    
+    .nav-menu {
+        display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
+        position: absolute;
+        top: 60px; /* Ajusta la distancia desde la parte superior del contenedor */
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-menu.active {
+        display: block; /* Mostrar el menú cuando está activo */
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+    }
+    
+    .nav-menu ul li {
+        margin: 10px 0;
+    }
+    
+    .menu-icon {
+        font-size: 24px;
+    }
+    .navbar .logo img {
+        max-height: 50px; /* Ajusta este valor según la altura deseada del navbar */
+        width: auto; /* Mantiene la proporción de la imagen */
+    }
+   
+    .carousel-item {
+        min-width: 100%; /* Cada imagen ocupa todo el ancho de la pantalla */
+    }
+
+}
+
+/* Ajustes para pantallas muy pequeñas, como móviles */
+@media (max-width: 480px) {
+    .navbar .logo {
+        max-height: 30px; /* Ajusta la altura máxima del logo para móviles */
+    }
+    .navbar .logo img {
+        max-height: 50px; /* Ajusta este valor según la altura deseada del navbar */
+        width: auto; /* Mantiene la proporción de la imagen */
+    }
+    
+    .hero {
+        height: 50vh;
+        font-size: 0.8em;
+    }
+
+    .carousel-item {
+        min-width: 100%; /* Cada imagen ocupa todo el ancho en pantallas muy pequeñas */
+        padding: 0; /* Elimina cualquier padding que pueda estar causando desplazamiento */
+    }
+
+    .carousel-item img {
+        object-fit: contain; /* Asegura que la imagen se ajuste completamente al contenedor */
+    }
+
+    .carousel-inner {
+        align-items: center; /* Centra las imágenes verticalmente si es necesario */
+    }
+    
+}
